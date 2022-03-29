@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.maxtrain.bootcamp.vendor.Vendor;
 
 @Entity
+@Table(uniqueConstraints=@UniqueConstraint(name="UIDX_partnbr", columnNames= {"partnbr"}))
 public class Product {
 	
 	@Id
